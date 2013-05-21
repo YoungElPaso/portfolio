@@ -16,4 +16,11 @@ require(['app', 'jquery', 'bootstrap'], function (app, $) {
     // use app here
     console.log(app);
     console.log('Running jQuery %s', $().jquery);
+
+    //
+    var options = {
+        'animation': true,
+        'title': 'foobar'
+    };
+    $('#about-site').tooltip(options);
 });
