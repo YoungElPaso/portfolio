@@ -11,16 +11,9 @@ require.config({
     }
 });
 
-require(['app', 'jquery', 'bootstrap'], function (app, $) {
+require(['app', 'jquery', 'bootstrap', 'portTips'], function (app, $, portTips) {
     'use strict';
     // use app here
-    console.log(app);
-    console.log('Running jQuery %s', $().jquery);
-
-    //
-    var options = {
-        'animation': true,
-        'title': 'foobar'
-    };
-    $('#about-site').tooltip(options);
+    // console.log(app);
+    // console.log('Running jQuery %s', $().jquery);
 });

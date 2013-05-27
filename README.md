@@ -7,4 +7,4 @@
  * Figure out best templating to use with Yeoman / MVC / YepNope (see above)
  * Figure out if there's a HAML possibility / templating with Yeoman
  * Check out other BS components such as dropdowns and forms (for contact form and info)
- * Find out more about how the JS is supposed to be structured with app.js and require etc.
+ * ~~Find out more about how the JS is supposed to be structured with app.js and require.js etc.~~
