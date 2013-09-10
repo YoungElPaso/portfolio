@@ -4,7 +4,7 @@ define([], function() {
 
     Modernizr.addTest('is_mobile', function() {
         var t1 = Modernizr.touch;
-        var t2 = Modernizr.mq('only all and (min-width: 480px)');
+        var t2 = Modernizr.mq('only all and (max-width: 480px)');
         if (t1 == false && t2 == false) {
             return false;
         } else {
