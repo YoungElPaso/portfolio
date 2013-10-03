@@ -22,11 +22,17 @@ module.exports = function (grunt) {
         dist: 'dist'
     };
 
+    grunt.loadNpmTasks('grunt-haml');
+
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
             options: {
                 nospawn: true
+            },
+            haml: {
+                files: ['app/*.haml'],
+                tasks: ['haml:index']
             },
             coffee: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
@@ -50,6 +56,12 @@ module.exports = function (grunt) {
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
+            }
+        },
+        haml: {
+            index: {
+                src: 'app/index.haml',
+                dest: 'app/index.html'
             }
         },
         connect: {
