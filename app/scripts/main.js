@@ -1,7 +1,8 @@
 require.config({
     paths: {
         jquery: '../bower_components/jquery/jquery',
-        bootstrap: 'vendor/bootstrap'
+        bootstrap: 'vendor/bootstrap',
+        yepnope: '../bower_components/yepnope/yepnope'
     },
     shim: {
         bootstrap: {
@@ -11,9 +12,9 @@ require.config({
     }
 });
 
-require(['app', 'jquery', 'bootstrap', 'portTips'], function (app, $, portTips) {
+require(['jquery', 'yepnope', 'app', 'bootstrap', 'portTips'], function($, app, portTips) {
     'use strict';
     // use app here
-    // console.log(app);
+    //console.log(app);
     // console.log('Running jQuery %s', $().jquery);
 });
